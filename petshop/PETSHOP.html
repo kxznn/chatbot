@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .chat-conteiner {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            z-index: 1000;
+        }
+
+        langflow-chat {
+            width: 300px;
+            height: 440px;
+        }
+    </style>
+
+</head>
+
+<body>
+    
+    <script>
+        src = "ttps://cdn.jsdelivr.net/gh/logspace-ai/langflow-embedded-chat@v1.0.7/dist/build/static/js/bundle.min.js" </
+    </script>
+
+    <div class="chat-conteiner">
+
+        <langflow-chat>
+            window_title="PETSHOP"
+            flow_id="86a92e6b-d5c5-4933-911e-2e7e9e2409d9"
+            host_url="http://localhost:7860">
+            width="300"
+            height="440"
+            chat_position="top-right"
+            placeholder="Digite sua pergunta ..."
+            online_message="Online">
+        </langflow-chat>
+    </div>
+</body>
+
+</html>
